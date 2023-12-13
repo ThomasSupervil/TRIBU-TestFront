@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
 // Partials
 @import './fonts/stylesheet.css';
 @import './partials/reset.scss';
@@ -8,8 +10,8 @@
 
 @import './components/header.scss';
 @import './components/hero.scss';
+@import './components/essentials.scss';
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 
 html {
   font-size: 62.5%;

@@ -1,0 +1,10 @@
+.essentials {
+  .title {
+    font-size: 1.4rem;
+    color: $lightBrown;
+
+    @include breakpoint('desktop') {
+      font-size: 2.4rem;
+    }
+  }
+}
