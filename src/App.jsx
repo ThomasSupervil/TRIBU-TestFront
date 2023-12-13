@@ -1,4 +1,5 @@
 import Header from "./components/Header"
+import Hero from "./components/Hero"
 
 const App = () => {
 
@@ -7,7 +8,7 @@ const App = () => {
       <Header />
 
       <main>
-
+        <Hero />
       </main>
 
       {/* <Footer /> */}

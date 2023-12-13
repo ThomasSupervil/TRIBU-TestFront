@@ -1,0 +1,182 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.6rem;
+
+  @include breakpoint('desktop') {
+    flex-direction: row;
+    gap: 3.5rem;
+  }
+}
+
+.hero--left {
+  width: 100%;
+  padding-block: 1.6rem;
+
+  @include breakpoint('desktop') {
+    max-width: 48rem;
+    padding-block: 2.9rem;
+  }
+
+  &__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .upper--title {
+    font-family: avenirheavy;
+    font-size: 1.1rem;
+
+    @include breakpoint('desktop') {
+      font-size: 1.8rem;
+    }
+  }
+
+  .title {
+    font-size: 1.4rem;
+    color: $lightBrown;
+
+    @include breakpoint('desktop') {
+      font-size: 2.4rem;
+    }
+  }
+
+  .text-xl {
+    font-family: avenirheavy;
+    font-size: 2.2rem;
+
+    @include breakpoint('desktop') {
+      font-size: 3.6rem;
+    }
+  }
+
+  .text-regular {
+    font-size: 1.2rem;
+
+    @include breakpoint('desktop') {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-block: 1.6rem;
+
+    @include breakpoint('desktop') {
+      margin-block: 4.8rem;
+      gap: 4.8rem;
+    }
+
+    .link {
+      display: flex;
+      gap: 1rem;
+
+      @include breakpoint('desktop') {
+        gap: 1.6rem;
+      }
+
+      &--brown,
+      &--white {
+        padding: 1rem;
+        text-decoration: none;
+        font-family: inter;
+        font-weight: 700;
+        font-size: 1rem;
+        
+        @include breakpoint('desktop') {
+          padding: 1.6rem;
+          font-size: 1.6rem;
+        }
+      }
+
+      &--brown {
+        background: $lightBrown;
+        border-radius: 3px;
+        color: #fff;
+
+        // &::hover {
+        //   background-color: $green;
+        //   transition: background-color 0.3s;
+        // }
+      }
+
+      &--white {
+        border: 1px solid $text;
+        border-radius: 3px;
+        color: $text;
+        background: #fff;
+
+        // &::hover {
+        //   background-color: $green;
+        //   transition: background-color 0.3s;
+        // }
+      }
+    }
+    
+    .ask {
+      display: flex;
+      align-items: center;
+
+      p, a {
+        font-size: 1.2rem;
+
+        @include breakpoint('desktop') {
+          font-size: 1.6rem;
+        }
+      }
+
+      a {
+        font-family: avenirblack;
+        color: $text;
+      }
+    }
+  }
+}
+
+.hero--right {
+  height: auto;
+  width: 100%;
+  min-height: 18rem;
+  background: url('/public/assets/heroImg.jpg') no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+  position: relative;
+
+  .quote {
+    padding: 1.6rem;
+    background-color: $brown;
+    border-radius: 5px;
+    max-width: 12.4rem;
+
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-20px) translateY(-24px);
+
+
+    @include breakpoint('desktop') {
+      padding: 3.2rem;
+      max-width: 19rem;
+
+      transform: translateX(-40px) translateY(-40px);
+    }
+
+    img {
+      margin-bottom: 0.6rem;
+    }
+
+    p {
+      font-family: Inter;
+      font-weight: 700;
+      font-size: 1rem;
+      color: #FFF;
+
+      @include breakpoint('desktop') {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
