@@ -1,7 +1,17 @@
+import Header from "./components/Header"
+
 const App = () => {
 
   return (
-    <p>Hello world</p>  
+    <div id="content">
+      <Header />
+
+      <main>
+
+      </main>
+
+      {/* <Footer /> */}
+    </div>
   )
 }
 

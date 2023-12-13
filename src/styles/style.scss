@@ -8,7 +8,25 @@
 
 @import './components/header.scss';
 
-#content {
-  max-width: 1140px;
-  margin: auto;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+html {
+  font-size: 62.5%;
+  color: $text;
+  font-family: avenir_regularregular;
 }
+
+#content {
+  margin: auto;
+  padding: 3.2rem;
+
+  @include breakpoint('desktop') {
+    max-width: 114rem;
+    padding: 0;
+  }
+}
+
+p, a {
+  font-size: 1.2rem;
+}
+

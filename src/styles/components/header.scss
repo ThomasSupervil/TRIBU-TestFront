@@ -1,0 +1,77 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7.9rem;
+
+  @include breakpoint('desktop') {
+    border-bottom: 1px solid $lightGray;
+  }
+  
+  .header--logo {
+
+  }
+
+  .header--right {
+    display: flex;
+    gap: 1.6rem;
+    flex-direction: row-reverse;
+
+    @include breakpoint('desktop') {
+      gap: 7.8rem;
+      flex-direction: row;
+    }
+
+    .menu--trigger {
+      display: block;
+      width: 2.4rem;
+      height: 2.4rem;
+
+      @include breakpoint('desktop') {
+        display: none;
+      }
+    }
+
+    nav {
+      display: none;
+
+      @include breakpoint('desktop') {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    ul {
+      display: flex;
+      @include breakpoint('tablet') {
+        gap: 7.8rem;
+      }
+    }
+
+    .menu--link {
+      font-size: 1.6rem;
+      text-decoration: none;
+      color: $text;
+
+      &:is(.hover) {
+        text-decoration: underline;
+      }
+    }
+
+    .order--button {
+      padding: 0.8rem 1.6rem;
+      border-radius: 3px;
+
+      font-size: 1rem;
+      font-family: Inter;
+      font-weight: 700;
+      text-decoration: none;
+      color: #fff;
+      background-color: $green;
+
+      @include breakpoint('desktop') {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
