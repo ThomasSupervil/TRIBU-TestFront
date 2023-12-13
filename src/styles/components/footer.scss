@@ -1,0 +1,44 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: column;
+  gap: 3.2rem;
+  padding-block: 3.2rem;
+
+  @include breakpoint('desktop') {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .footer--socials {
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    padding: 1.6rem 3.6rem;
+
+    background-color: $lightGray;
+
+    @include breakpoint('desktop') {
+      padding: 1.6rem 6.8rem;
+    }
+  }
+
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.8rem;
+
+    a {
+      font-family: avenir_regularregular;
+      font-size: 1.6rem;
+      text-decoration: none;
+      color: $text;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
