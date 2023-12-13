@@ -2,7 +2,13 @@
 @import './fonts/stylesheet.css';
 @import './partials/reset.scss';
 @import './partials/mixin.scss';
+@import './partials/colors.scss';
 
 // Components
 
 @import './components/header.scss';
+
+#content {
+  max-width: 1140px;
+  margin: auto;
+}
