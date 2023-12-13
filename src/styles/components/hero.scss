@@ -132,6 +132,11 @@
       a {
         font-family: avenirblack;
         color: $text;
+
+        &:hover {
+          color: $green;
+          transition: color 0.3s;
+        }
       }
     }
   }
@@ -143,6 +148,7 @@
   min-height: 18rem;
   background: url('/public/assets/heroImg.jpg') no-repeat;
   background-size: cover;
+  background-position: center;
   border-radius: 1rem;
   position: relative;
 
