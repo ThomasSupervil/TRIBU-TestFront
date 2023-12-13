@@ -98,10 +98,10 @@
         border-radius: 3px;
         color: #fff;
 
-        // &::hover {
-        //   background-color: $green;
-        //   transition: background-color 0.3s;
-        // }
+        &:hover {
+          background-color: $green;
+          transition: background-color 0.3s;
+        }
       }
 
       &--white {
@@ -110,10 +110,10 @@
         color: $text;
         background: #fff;
 
-        // &::hover {
-        //   background-color: $green;
-        //   transition: background-color 0.3s;
-        // }
+        &:hover {
+          background-color: $green;
+          transition: background-color 0.3s;
+        }
       }
     }
     

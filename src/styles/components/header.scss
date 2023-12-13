@@ -51,7 +51,7 @@ header {
       text-decoration: none;
       color: $text;
 
-      &:is(.hover) {
+      &:hover {
         text-decoration: underline;
       }
     }
